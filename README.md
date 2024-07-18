@@ -18,15 +18,28 @@ public class Main {
         System.out.println("Generated ObjectID: " + objectId);
     }
 }
+```
 
 ### Penjelasan Kode
-Timestamp: Menggunakan timestamp Unix dalam detik.
-Random Value: Menghasilkan nilai acak 5 byte saat inisialisasi.
-Counter: Counter 3 byte yang diinisialisasi dengan nilai acak dan meningkat setiap kali ObjectID dihasilkan.
+- **Timestamp**: Menggunakan timestamp Unix dalam detik.
+- **Random Value**: Menghasilkan nilai acak 5 byte saat inisialisasi.
+- **Counter**: Counter 3 byte yang diinisialisasi dengan nilai acak dan meningkat setiap kali ObjectID dihasilkan.
 
-### Langkah Setup
+## Langkah Setup
 1. Clone repository ini.
-2. Tambahkan ObjectIdGenerator.java ke proyek Anda.
-3. Gunakan metode generate() untuk menghasilkan ObjectID baru.
+2. Tambahkan `ObjectIdGenerator.java` ke proyek Anda.
+3. Gunakan metode `generate()` untuk menghasilkan ObjectID baru.
 
+## Proof of Concept
+Anda dapat membuat proyek Spring Boot dan menambahkan endpoint untuk menghasilkan ObjectID jika diinginkan.
 
+### Menggunakan Spring Boot
+Jika Anda menggunakan Spring Boot, jalankan aplikasi menggunakan perintah berikut:
+```
+./mvnw spring-boot:run
+```
+
+Gunakan endpoint berikut untuk menghasilkan ObjectID:
+- URL: /api/generate-objectid
+- Metode: `GET`
+  
